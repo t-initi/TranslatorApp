@@ -1,0 +1,98 @@
+*{
+padding: 0px;
+margin: 0px;
+}
+body{
+width: 100%;
+}
+.top,.bottom{ 
+	width:100%; 
+	background-color: blue;
+	height: 50px;
+
+
+}
+#mainFrame{
+	width: 70%;
+	height: 512px;
+	margin: 10px auto;
+	border: 2px solid gray;
+	text-align: center;
+	padding-top: 20px;
+	min-width: 700px;
+}
+#mot{
+	width: 90%;
+	border-top: 5px black solid;
+	margin: 10px auto;
+	
+
+}
+#wordPanel{
+	border: 1px solid black;
+	display: inline-block;
+	width: 68%;
+	float: left;
+	height: 100px;
+	border-radius: 5px;
+}
+#resp{
+	height: 30px;
+	width :200px;
+	margin-bottom: 20px;
+	text-align: center;
+	border-color: blue;
+}
+#score{
+	border: 1px solid black;
+	border-radius: 10px;
+	height: 100px;
+	width: 31%;
+	display: inline-block;
+	clear: both;
+	
+	font-size: 3.5em;
+	font-weight: bold;
+
+}
+#score span{
+	display: block;
+	margin: 10px auto;
+}
+.sub_title{
+	
+	width: 99%;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 10px auto;
+	background-color: #8ccccc;
+}
+#vBT{
+	width: 230px;
+	height: 50px;
+	border-radius: 10px;
+	border: 4px blue solid;
+	background-color: green;
+	color: white;
+	font-weight: bold;
+	font-size: 1.4em;	
+}
+#start{
+	width: 230px;
+	height: 50px;
+	border-radius: 10px;
+	border: 4px blue solid;
+	background-color: gray;
+	color: white;
+	font-weight: bold;
+	font-size: 1.4em;
+	margin-bottom: 10px; 
+
+}
+
+#engWord{
+	
+}
+#resultCheck{
+	display: hidden;
+}
