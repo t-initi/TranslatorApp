@@ -64,7 +64,7 @@ $(document).ready(function(){
 
 		if(p==20){
 			//Fin du jeu : joueur a gagné
-			window.location.href= "./end.php";
+			window.location.href= "./endwon.php";
 				//alert("Fin du jeu : joueur a gagné");
 		}
 		
@@ -80,7 +80,7 @@ $(document).ready(function(){
 		if(p==0){
 			//Fin du jeu le joueur a perdu
 			//alert("Fin du jeu : joueur a perdu");
-			window.location.href= "./end.php";
+			window.location.href= "./endlost.php";
 		}
 	}
 
@@ -111,12 +111,22 @@ $(document).ready(function(){
 			url: './php/translate.php/?mot='+word,
 			success: function(data){
 				$('#engWord').html(data);
-				var res = $('#engWord').text().charAt(0).toUpperCase();
-				//$('#engWord').html(res);
-				fChar.html(res);
-				nbChar.html($('#engWord').text().length);
-				/*firstW = $('#engWord').text().toUpperCase();
-				fChar.text(firstW);*/
+
+				//si on ne trouve pas de traduction
+				if($('#engWord').html()=="null"){
+					pickRandomWord(); //On charge un autre mot
+					loadHideEnglishWord();
+				}else{
+					var res = $('#engWord').text().charAt(0).toUpperCase();
+					//$('#engWord').html(res);
+					fChar.html(res);
+					nbChar.html($('#engWord').text().length);
+				}
+
+
+				
+				
+
 			}
 
 		});

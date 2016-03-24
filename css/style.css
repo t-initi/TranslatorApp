@@ -9,8 +9,6 @@ width: 100%;
 	width:100%; 
 	background-color: blue;
 	height: 50px;
-
-
 }
 #mainFrame{
 	width: 70%;
@@ -29,7 +27,7 @@ width: 100%;
 
 }
 #wordPanel{
-	border: 1px solid black;
+	
 	display: inline-block;
 	width: 68%;
 	float: left;
@@ -95,4 +93,15 @@ width: 100%;
 }
 #resultCheck{
 	display: hidden;
+}
+#mainPanel{
+	font-size: 1.3em;
+	margin: 10px;
+}
+#mainPanel div, #mainPanel p{
+	
+	margin: 10px;
+}
+#resultCheck, #engWord{
+	visibility: hidden;
 }

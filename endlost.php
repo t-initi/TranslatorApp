@@ -13,30 +13,17 @@
 	<body>
 		<div class='top'> </div>
 		<div id='mainFrame'>
-			<div id="wordPanel">
-				
-			
-
+			<div id="mainPanel">
 				
 				<h1>THE END</h1>
+
 				<div>
-					<?php
-						if(isset($_GET['state'])){
-							echo $s = $_GET['state'] ;
-							if($s==1){
-								echo "<p>Bravo !!!!</p><p>Vous avez gagné</p>";
-							} 
-							else if($s==0){
-								echo "<p>Game Over!!!!</p><p>Vous avez gagné</p>";
-							}
-						}
-					?>
-					<div><a href="./index.php"> Jouer une nouvelle partie </a></div>
+					<p>Game Over!!!!</p><p>Vous avez perdu</p>
+					<div>
+						<a href="./index.php"> Jouer une nouvelle partie </a>
+					</div>
 				</div>
 
-				
-			
-				
 			</div>
 
 

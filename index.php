@@ -52,7 +52,7 @@
 				<h2 class='sub_title'>AIDE MEMOIRE</h2>
 				<div>
 					
-					<p>La première lettre est : <span id='engWord' ></span> <span id='fChar'></span></p>
+					<p>La première lettre est : <span id='fChar'></span> <br /><span id='engWord' ></span></p>
 
 					<p>Le nombre de caractère est :  <span id='nbChar'></span></p>
 				</div>

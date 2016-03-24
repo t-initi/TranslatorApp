@@ -54,7 +54,7 @@ class TranslateEngine{
 		$target =$this->getElementsByClassName("dl_dict_area",$dom);
 		if(!isset($target[1])){
 			//return null;
-			return $word;
+			return "null";
 		 
 		}else{
 			$div1 =$target[1]->getElementsByTagName('div')->item(1);

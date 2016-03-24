@@ -11,9 +11,9 @@ if(isset($_GET['mot'])){
 	$english = $translator->translate($mot);
 
 	//On vérifie que la valeur de retourn n'est pas nulle
-	if(!is_null($english)){
+	//if(!is_null($english)){
 		echo $english; //On renvoie le mot traduit
-	}
+	//}
 	//else generata anothere word
  	
 }
